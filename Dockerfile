@@ -1,5 +1,6 @@
-FROM openjdk:17
+FROM openjdk:17-jdk-slim
 WORKDIR /app
-COPY AddNumbers.java .
-RUN javac AddNumbers.java
-CMD ["java", "AddNumbers"]
+COPY AddTwoNumbers.java .
+RUN javac AddTwoNumbers.java
+CMD ["java", "AddTwoNumbers"]
+
